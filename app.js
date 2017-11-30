@@ -3,9 +3,17 @@ let path = require('path')
 let app = express()
 
 app.get('/', (req, res) => {
-    res.sendFile(path.resolve('./woori.html'))
+    res.sendFile(path.resolve('./index.html'))
 })
 
 app.use(express.static(path.resolve('.')))
 
-app.listen(3000, () => console.log('Serving on 3000'))
+let port
+
+try {
+    port = process.env.PORT
+} catch (err) {
+    port = 3000
+}
+
+app.listen(port, () => console.log('Serving on ' + port.toString()))

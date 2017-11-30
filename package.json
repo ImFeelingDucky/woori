@@ -1,0 +1,11 @@
+{
+  "name": "woori",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "git@github.com:ImFeelingDucky/woori.git",
+  "author": "Max <max.dez@live.co.za>",
+  "license": "Unlicensed",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}

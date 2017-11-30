@@ -2,40 +2,32 @@
     background-image: url('https://s2.postimg.org/lx5jqncgp/Sky-_Wallpaper.jpg');
     background-size: cover;
     background-position: center;
-    height: 25em;
-    width: 100vw;
+    height: 30em;
 }
 
 .hero-heading {
     margin: auto;
     color: #ffffff;
+    padding-top: 10em;
 }
 
 .hero-heading h1 {
     margin-top: 0;
     margin: auto;
-    
 }
 
-.ftext {
-    position: relative;
-    /* top: -500px;
-    left: 30px; */
-
+.hero-heading h1, .hero-heading h2 {
+    text-align: center;
+    font-size: 5rem;
     /* 
     * Rather don't specify top/bottom/left/right
     because this will only look good at a
     specific size, and will look wonky and 
     misaligned at any other size.
     * If you want to horizontally centre
-    something, set margin to auto.
-    */    
-}
-
-.stext {
-    position: relative;
-    /* top: -450px;
-    left: 90px; */
+    something, set margin to auto and/or
+    text-align to center.
+    */
 }
 
 .info {
@@ -47,14 +39,28 @@
     /* Make the line underneath */
 }
 
+.bgcolorA {
+    background-color: #ffe0bd;
+    margin-top: -20px;
+    padding: 90px 2em;
+    /* Using padding, to add some breathing space on either side of
+    paragraphs */
+    
+    
+}
+
 .tText {
+    display: block;
     font-size: 20px;
-    text-align: center;
     line-height: 18pt;
     font-family: "Inconsolata", san-serif;
-    margin-left: 90px;
-    margin-right: 90px;
-    margin-top: 40px;
+    /*
+    * If you want whitespace on either side of an element,
+    rather leave margin at something small (like an em),
+    and set a max-width.
+    */
+    margin: 2em auto;
+    max-width: 40em;
 }
 
 .pastorText {
@@ -77,15 +83,6 @@
     border-color: black;
     border-width: 5px;
     border-style: solid;
-}
-
-.bgcolorA {
-    background-color: #ffe0bd;
-    margin-top: -3px;
-    padding-top: 60px;
-    padding-bottom: 90px;
-    height: 100%;
-    width: 100%;
 }
 
 .pastor1 {
